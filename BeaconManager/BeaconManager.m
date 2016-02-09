@@ -18,7 +18,7 @@
         originDict = [[NSMutableDictionary alloc] init];
         compareDict = [[NSMutableDictionary alloc] init];
         
-        //  타이머 설정. 안드로이드는 3초, 현재 5초로 설정
+        //  타이머 설정. 안드로이드는 3초, 현재 5초로 설정 `
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             if([[UIDevice currentDevice] respondsToSelector:@selector(isMultitaskingSupported)]){
                 NSLog(@"Multitasking Supported");
