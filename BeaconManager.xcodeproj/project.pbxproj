@@ -13,6 +13,7 @@
 		A7FEF5621C634697009C9E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FEF5601C634697009C9E7A /* Main.storyboard */; };
 		A7FEF5641C634697009C9E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FEF5631C634697009C9E7A /* Assets.xcassets */; };
 		A7FEF5671C634697009C9E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FEF5651C634697009C9E7A /* LaunchScreen.storyboard */; };
+		A7FEF5701C6346B1009C9E7A /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FEF56F1C6346B1009C9E7A /* BeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A7FEF5631C634697009C9E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7FEF5661C634697009C9E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7FEF5681C634697009C9E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FEF56E1C6346B1009C9E7A /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		A7FEF56F1C6346B1009C9E7A /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				A7FEF55B1C634697009C9E7A /* AppDelegate.m */,
 				A7FEF55D1C634697009C9E7A /* ViewController.h */,
 				A7FEF55E1C634697009C9E7A /* ViewController.m */,
+				A7FEF56E1C6346B1009C9E7A /* BeaconManager.h */,
+				A7FEF56F1C6346B1009C9E7A /* BeaconManager.m */,
 				A7FEF5601C634697009C9E7A /* Main.storyboard */,
 				A7FEF5631C634697009C9E7A /* Assets.xcassets */,
 				A7FEF5651C634697009C9E7A /* LaunchScreen.storyboard */,
@@ -110,6 +115,11 @@
 				TargetAttributes = {
 					A7FEF5531C634697009C9E7A = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7FEF55F1C634697009C9E7A /* ViewController.m in Sources */,
+				A7FEF5701C6346B1009C9E7A /* BeaconManager.m in Sources */,
 				A7FEF55C1C634697009C9E7A /* AppDelegate.m in Sources */,
 				A7FEF5591C634697009C9E7A /* main.m in Sources */,
 			);
@@ -262,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BeaconManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidsbus.BeaconManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BeaconManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kidsbus.BeaconManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
